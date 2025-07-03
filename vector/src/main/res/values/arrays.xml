@@ -1,0 +1,25 @@
+<resources>
+    <!-- Giao diện -->
+    <string-array name="interface_theme_entries">
+        <item>Theo hệ thống</item>
+        <item>Giao diện sáng</item>
+        <item>Giao diện tối</item>
+    </string-array>
+    <string-array name="interface_theme_values">
+        <item>system</item>
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+
+    <!-- Ngôn ngữ -->
+    <string-array name="language_entries">
+        <item>Tiếng Lào</item>
+        <item>Tiếng Việt</item>
+        <item>Tiếng Anh</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>lo</item>
+        <item>vi</item>
+        <item>en</item>
+    </string-array>
+</resources>

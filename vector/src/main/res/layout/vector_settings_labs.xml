@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- 1. Swipe to reply -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Enable swipe to reply in timeline"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black" />
+                    <Switch
+                        android:id="@+id/switch_swipe_reply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:track="@drawable/switch_track"
+                        android:thumb="@drawable/switch_thumb"/>
+                </LinearLayout>
+
+                <!-- 2. LaTeX -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Enable LaTeX mathematics"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black" />
+                        <Switch
+                            android:id="@+id/switch_latex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:track="@drawable/switch_track"
+                            android:thumb="@drawable/switch_thumb"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Restart the application for the change to take effect."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:paddingTop="4dp" />
+                </LinearLayout>
+
+                <!-- 3. Threaded messages -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Enable threaded messages"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black" />
+                        <Switch
+                            android:id="@+id/switch_threaded"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:track="@drawable/switch_track"
+                            android:thumb="@drawable/switch_thumb"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Note: app will be restarted."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:paddingTop="4dp" />
+                </LinearLayout>
+
+                <!-- 4. Auto report decryption errors -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Auto report decryption errors"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black" />
+                        <Switch
+                            android:id="@+id/switch_auto_report"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:track="@drawable/switch_track"
+                            android:thumb="@drawable/switch_thumb"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter button of the soft keyboard will send message instead of adding a line break."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:paddingTop="4dp" />
+                </LinearLayout>
+
+                <!-- 5. Live location sharing -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Enable live location sharing"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black" />
+                        <Switch
+                            android:id="@+id/switch_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:track="@drawable/switch_track"
+                            android:thumb="@drawable/switch_thumb"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Temporary implementation: locations persist in room history."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:paddingTop="4dp" />
+                </LinearLayout>
+
+                <!-- 6. LaoApp call permission shortcuts -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Enable LaoApp call permission shortcuts"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black" />
+                        <Switch
+                            android:id="@+id/switch_laoapp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:track="@drawable/switch_track"
+                            android:thumb="@drawable/switch_thumb"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Auto-approve LaoApp call widgets and grant camera/ mic access."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:paddingTop="4dp" />
+                </LinearLayout>
+
+                <!-- 7. Deferred DMs -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Enable defferred DMs"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black" />
+                        <Switch
+                            android:id="@+id/switch_deferred_dm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:track="@drawable/switch_track"
+                            android:thumb="@drawable/switch_thumb"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Create DM only on first message"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:paddingTop="4dp" />
+                </LinearLayout>
+
+                <!-- 8. Rich text editor -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Enable rich text editor"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black" />
+                        <Switch
+                            android:id="@+id/switch_rich_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:track="@drawable/switch_track"
+                            android:thumb="@drawable/switch_thumb"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Try out the rich text editor (plain text mode coming soon)"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:paddingTop="4dp" />
+                </LinearLayout>
+
+                <!-- 9. New session manager -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Enable new session manager"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black" />
+                        <Switch
+                            android:id="@+id/switch_session_manager"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:track="@drawable/switch_track"
+                            android:thumb="@drawable/switch_thumb"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Have greater visibility and control over all your sessions"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:paddingTop="4dp" />
+                </LinearLayout>
+
+                <!-- 10. Client info recording -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Enable client info recording"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black" />
+                        <Switch
+                            android:id="@+id/switch_client_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:track="@drawable/switch_track"
+                            android:thumb="@drawable/switch_thumb"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Record the client name, version, and url to recognise sessions more easily in session manager."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:paddingTop="4dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

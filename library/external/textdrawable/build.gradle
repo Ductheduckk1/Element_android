@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+
+android {
+    namespace "com.amulyakhare.textdrawable"
+
+    compileSdk versions.compileSdk
+
+    defaultConfig {
+        minSdk versions.minSdk
+        targetSdk versions.targetSdk
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+afterEvaluate {
+    tasks.findAll { it.name.startsWith("lint") }.each {
+        it.enabled = false
+    }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="64dp"
+    android:layout_margin="4dp"
+    android:layout_columnWeight="1"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/btn_number"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:background="@drawable/keypad_button_background"
+        android:text="0" />
+</FrameLayout>

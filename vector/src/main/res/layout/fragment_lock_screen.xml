@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tạo mã PIN để bảo mật"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitle_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setting up a PIN lets you protect data like messages and contacts, so only you can access them by entering the PIN at the start of the app"
+        android:textSize="14sp"
+        android:textColor="#7C7C7C"
+        android:gravity="center"
+        android:paddingBottom="24dp" />
+
+    <!-- PIN Input -->
+    <LinearLayout
+        android:id="@+id/pin_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/pinDigit1"
+            android:textColor="#021B84"
+            style="@style/PinDigitStyle" />
+
+        <EditText
+            android:id="@+id/pinDigit2"
+            style="@style/PinDigitStyle"
+
+            android:layout_marginStart="8dp" />
+
+        <EditText
+            android:id="@+id/pinDigit3"
+            style="@style/PinDigitStyle"
+
+            android:layout_marginStart="8dp" />
+
+        <EditText
+            android:id="@+id/pinDigit4"
+            style="@style/PinDigitStyle"
+
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+
+    <!-- Tạo mã -->
+    <Button
+        android:id="@+id/btn_create_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tạo mã"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#021B84"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Quên mã -->
+    <TextView
+        android:id="@+id/button_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên mã PIN"
+        android:textColor="#021B84"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+</LinearLayout>

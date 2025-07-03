@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vector_settings_message">Message</string>
+    <string name="vector_settings_contact">Danh bạ\n</string>
+    <string name="vector_settings_other">Cài đặt khác</string>
+    <string name="vector_settings_room_directory">Room Directory\n</string>
+    <string name="request_that_the_keyboard_should_not_update_any_personalized_data_such_as_typing_history_and_dictionary_based_on_what_you_ve_typed_in_conversations_notice_that_some_keyboards_may_not_respect_this_setting">Request that the keyboard should not update any personalized data such as typing history and dictionary based on what you\'ve typed in conversations. Notice that some keyboards may not respect this setting.</string>
+    <string name="preference">Giao diện và ngôn ngữ</string>
+    <string name="message">Message</string>
+</resources>

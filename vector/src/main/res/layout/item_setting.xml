@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 1. Thông báo -->
+    <LinearLayout
+        android:id="@+id/row_notifications"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="8dp"
+        android:gravity="center_vertical">
+
+        <android.widget.ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_noti"
+            android:tint="#3B52A1"
+            android:layout_marginEnd="12dp" />
+
+        <android.widget.TextView
+            android:text="Thông báo"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <android.widget.ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_chevron_right"
+            android:tint="#888888" />
+    </LinearLayout>
+
+    <!-- 2. Message -->
+    <LinearLayout
+        android:id="@+id/row_message"
+        style="@style/SettingRowStyle">
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_message"
+            style="@style/SettingRowIcon" />
+
+        <android.widget.TextView
+            android:text="Message"
+            style="@style/SettingRowText" />
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_chevron_right"
+            style="@style/SettingRowChevron" />
+    </LinearLayout>
+
+    <!-- 3. Call & Video -->
+    <LinearLayout
+        android:id="@+id/row_call_video"
+        style="@style/SettingRowStyle">
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_call"
+            style="@style/SettingRowIcon" />
+
+        <android.widget.TextView
+            android:text="Call &amp; Video"
+            style="@style/SettingRowText" />
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_chevron_right"
+            style="@style/SettingRowChevron" />
+    </LinearLayout>
+
+    <!-- 4. Danh bạ -->
+    <LinearLayout
+        android:id="@+id/row_contacts"
+        style="@style/SettingRowStyle">
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_contact"
+            style="@style/SettingRowIcon" />
+
+        <android.widget.TextView
+            android:text="Danh bạ"
+            style="@style/SettingRowText" />
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_chevron_right"
+            style="@style/SettingRowChevron" />
+    </LinearLayout>
+
+    <!-- 5. Giao diện và ngôn ngữ -->
+    <LinearLayout
+        android:id="@+id/row_interface_language"
+        style="@style/SettingRowStyle">
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_language"
+            style="@style/SettingRowIcon" />
+
+        <android.widget.TextView
+            android:text="Giao diện và ngôn ngữ"
+            style="@style/SettingRowText" />
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_chevron_right"
+            style="@style/SettingRowChevron" />
+    </LinearLayout>
+
+    <!-- 6. Bảo mật -->
+    <LinearLayout
+        android:id="@+id/row_security"
+        style="@style/SettingRowStyle">
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_security"
+            style="@style/SettingRowIcon" />
+
+        <android.widget.TextView
+            android:text="Bảo mật"
+            style="@style/SettingRowText" />
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_chevron_right"
+            style="@style/SettingRowChevron" />
+    </LinearLayout>
+
+    <!-- 7. Cài đặt khác -->
+    <LinearLayout
+        android:id="@+id/row_other_settings"
+        style="@style/SettingRowStyle">
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_setting"
+            style="@style/SettingRowIcon" />
+
+        <android.widget.TextView
+            android:text="Cài đặt khác"
+            style="@style/SettingRowText" />
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_chevron_right"
+            style="@style/SettingRowChevron" />
+    </LinearLayout>
+
+    <!-- 8. Help & About -->
+    <LinearLayout
+        android:id="@+id/row_help"
+        style="@style/SettingRowStyle">
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_help"
+            style="@style/SettingRowIcon" />
+
+        <android.widget.TextView
+            android:text="Help &amp; About"
+            style="@style/SettingRowText" />
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_chevron_right"
+            style="@style/SettingRowChevron" />
+    </LinearLayout>
+
+    <!-- 9. Điều khoản và Chính sách bảo mật -->
+    <LinearLayout
+        android:id="@+id/row_policy"
+        style="@style/SettingRowStyle">
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_security"
+            style="@style/SettingRowIcon" />
+
+        <android.widget.TextView
+            android:text="Điều khoản và Chính sách bảo mật"
+            style="@style/SettingRowText" />
+
+        <android.widget.ImageView
+            android:src="@drawable/ic_chevron_right"
+            style="@style/SettingRowChevron" />
+    </LinearLayout>
+
+</LinearLayout>
